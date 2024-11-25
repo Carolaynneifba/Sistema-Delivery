@@ -6,18 +6,14 @@ import java.util.UUID;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 
 public class Produto {
-     private UUID id;
+    private UUID id;
     private String nome;
     private String codigoBarras;
     private String descricao;
@@ -26,5 +22,7 @@ public class Produto {
     private List<String> tags;
     private List<CategoriaProduto> categorias;
     private List<FotoProduto> fotos;
+    private Produto produtos;
+
 
 }
